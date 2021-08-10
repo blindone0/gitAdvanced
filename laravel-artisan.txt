@@ -1,0 +1,67 @@
+set maintance mode which at ('resources/views/errors/503.blade.php') {
+	php artisan down
+	php artisan down --refresh=15 //reload page after n seconds (http refresh)  
+	php artisan down --retry=60 //show time the server will be down (http retry-after)
+
+	php artisan down --secret="1630542a-246b-4b66-afa1-dd72a4c43515"
+	//	then go to
+	https://example.com/1630542a-246b-4b66-afa1-dd72a4c43515
+	//	setting bypass cookie to your browser
+
+	//render very before to ommit possible loaded parts of frameworks 
+	php artisan down --render="errors::503"
+
+	//redirect to url
+	php artisan down --redirect=/
+	
+} (queues are not handeled in this mode, #vapor or #Envoyer as alternatives)
+
+disable maintance mode {
+	php artisan up
+}
+
+link storage storage/app/public to public/storage {
+	php artisan storage:link
+}
+
+run test {
+	php artisan test
+}
+
+make job {
+	php artisan make:job // generates job class under app/Jobs
+}
+
+list what to make {
+	php artisan list make
+}
+
+create custom command {
+	make:command
+}
+
+custom channel {
+	make:channel
+}
+
+make event {
+	event:generate
+	make:event
+}
+
+make listener {
+	event:generate
+	make:listener
+}
+
+generate mail directory {
+	make:mail
+}
+
+create notifications {
+	make:notification
+}
+
+create policy {
+	make:policy
+}

@@ -1,0 +1,32 @@
+access .env variables {
+
+	use Illuminate\Support\Facades\App;
+
+	$environment = App::environment();
+
+}
+
+check .env -> APP_ENV variable {
+
+	if (App::environment('local')) {
+	    // The environment is local
+	}
+
+	if (App::environment(['local', 'staging'])) {
+	    // The environment is either local OR staging...
+	}
+
+}
+
+use global config function to change settings from anywhere {
+
+	$value = config('app.timezone');
+
+	// Retrieve a default value if the configuration value does not exist...
+	$value = config('app.timezone', 'Asia/Seoul');
+
+	pass to change(){
+		config(['app.timezone' => 'America/Chicago']);
+	}
+
+}

@@ -1,0 +1,10 @@
+app 		- core code (alnost all classes)
+bootstrap	- cache and framework files
+config		- conf to read and learn
+database	- migrations, model factories and seeds, may contain sqllite databases
+public		- index.php here and assets img,js,css
+resources	- views and uncompiled css and js and language files 
+routes		- for routes 
+storage		- logs, blade templates, session files, caches
+test		- unit and feature test
+vendor		- for dependencies

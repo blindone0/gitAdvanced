@@ -1,0 +1,14 @@
+npm 
+laravelmix
+eloquent
+how to define server-level APP_ENV environment variable and why we should? 
+laravel vapor -- zero-downtime
+laravel Envoyer -- zero-downtime
+how composer outoloads classes
+what is model factorie
+middleware group 
+CSRF protection
+event broadcasting
+PHPUnit
+PSR-4 autoloading standard
+ActiveRecord
