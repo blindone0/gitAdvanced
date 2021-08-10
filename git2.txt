@@ -1,0 +1,26 @@
+git branch new_branch
+git branch
+git checkout new_branch
+...
+git checkout master //change current branch to master
+git merge new_branch //merghe to current from new_branch
+git branch -d awesome_new_feature //delete branch
+
+git log
+
+git show b10cc123
+git diff 09bd8cc..ba25c0ff
+
+git difftool
+
+git checkout 09bd8cc1 hello.txt
+
+git commit --amend // with staged files from last commit 
+
+git revert HEAD		//revert to the commit 
+
+git revert b10cc123
+
+git add -A
+
+
